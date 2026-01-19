@@ -1,5 +1,8 @@
 import { pgTable, text, serial, timestamp, boolean, jsonb } from "drizzle-orm/pg-core";
 
+// Schema definition for the database
+
+
 export const projects = pgTable("projects", {
     id: serial("id").primaryKey(),
     title: text("title").notNull(),
